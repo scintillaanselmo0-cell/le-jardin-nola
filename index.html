@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c110d" />
+
+  <title>Le Jardin — Cocktail Bar & Bistrot · Nola (NA)</title>
+  <meta name="description" content="Le Jardin, Nola (NA): una location, due anime. Nouveau, il cocktail bar nel giardino, e il Bistrot, la cucina d'atmosfera. Scegli dove entrare." />
+  <link rel="canonical" href="https://scintillaanselmo0-cell.github.io/le-jardin-nola/" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/img/icon-512.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Le Jardin" />
+  <meta property="og:title" content="Le Jardin — Cocktail Bar & Bistrot" />
+  <meta property="og:description" content="Una location, due anime. Nouveau cocktail bar nel giardino e il Bistrot. Nola (NA)." />
+  <meta property="og:image" content="assets/img/og-home.jpg" />
+  <meta property="og:locale" content="it_IT" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Le Jardin — Cocktail Bar & Bistrot" />
+  <meta name="twitter:description" content="Una location, due anime. Nola (NA)." />
+  <meta name="twitter:image" content="assets/img/og-home.jpg" />
+
+  <!-- Fonts -->
+  <!-- Font self-hosted (nessuna dipendenza esterna) -->
+  <link rel="preload" href="assets/fonts/great-vibes-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/cormorant-600.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="fonts.css" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JSON-LD: organizzazione madre -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "Le Jardin",
+    "description": "Cocktail Bar (Nouveau) e Bistrot a Nola (NA).",
+    "url": "https://scintillaanselmo0-cell.github.io/le-jardin-nola/",
+    "image": "https://scintillaanselmo0-cell.github.io/le-jardin-nola/assets/img/og-home.jpg",
+    "telephone": "+3908117868668",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Marco Clodio Marcello 7",
+      "addressLocality": "Nola",
+      "addressRegion": "NA",
+      "postalCode": "80035",
+      "addressCountry": "IT"
+    },
+    "sameAs": [
+      "https://www.facebook.com/p/Le-jardin-Nouveau-61557852314824/",
+      "https://www.instagram.com/lejardindenouveau/",
+      "https://www.instagram.com/lejardin_bistrot/"
+    ]
+  }
+  </script>
+</head>
+
+<body class="page-splash" data-page="splash">
+  <main class="splash">
+    <!-- Brand centrale -->
+    <div class="splash__brand">
+      <div class="script">Le Jardin</div>
+      <div class="tagline">Cocktail Bar &amp; Bistrot · Nola</div>
+    </div>
+
+    <!-- Chooser split-screen -->
+    <div class="chooser">
+      <!-- NOUVEAU -->
+      <a class="half half--nouveau" href="nouveau.html" aria-label="Entra nel Cocktail Bar Nouveau">
+        <div class="half__media">
+          <video autoplay muted loop playsinline preload="metadata"
+                 poster="assets/poster/nouveau-hero.jpg">
+            <source src="assets/video/nouveau-hero.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="half__scrim"></div>
+        <div class="half__inner">
+          <p class="kicker half__kicker">Spazio esterno · Giardino</p>
+          <h2 class="half__title">Nouveau</h2>
+          <p class="half__desc">Il cocktail bar sotto le stelle. Aperti tutti i giorni dalle 20:00.</p>
+          <span class="half__cta">Cocktail Bar</span>
+        </div>
+      </a>
+
+      <!-- BISTROT -->
+      <a class="half half--bistrot" href="bistrot.html" aria-label="Entra nel Bistrot">
+        <div class="half__media">
+          <video autoplay muted loop playsinline preload="metadata"
+                 poster="assets/poster/bistrot-hero.jpg">
+            <source src="assets/video/bistrot-hero.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="half__scrim"></div>
+        <div class="half__inner">
+          <p class="kicker half__kicker">Sale interne · Cucina</p>
+          <h2 class="half__title">Bistrot</h2>
+          <p class="half__desc">La cucina d'atmosfera. Dal martedì alla domenica dalle 20:00.</p>
+          <span class="half__cta">Bistrot</span>
+        </div>
+      </a>
+
+      <!-- Cerniera con logo -->
+      <div class="chooser__hinge" aria-hidden="true"><span class="lj">LJ</span></div>
+    </div>
+
+    <!-- Footer minimale -->
+    <footer class="splash__foot" id="splashFoot"></footer>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
