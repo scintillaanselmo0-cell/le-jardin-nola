@@ -328,7 +328,7 @@ section { position: relative; }
 
 /* ---------- Gallery: marquee orizzontale automatico (non interattivo) ---------- */
 .marquee {
-  width: 100vw; margin-left: 50%; transform: translateX(-50%); /* full-bleed */
+  width: 100vw; margin-left: calc(50% - 50vw); /* full-bleed senza transform (non entra in conflitto) */
   overflow: hidden; pointer-events: none; /* non cliccabile né bloccabile */
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
           mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
