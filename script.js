@@ -76,6 +76,24 @@
     window.addEventListener("scroll", onScroll, { passive: true });
   }
 
+  /* ---------- Galleria marquee (scorrimento orizzontale automatico) ---------- */
+  function initMarquee() {
+    $all("[data-marquee]").forEach(function (m) {
+      var track = m.querySelector(".marquee__track");
+      if (!track) return;
+      var originals = $all("img", track);
+      if (!originals.length) return;
+      // Duplica il set di immagini per un loop continuo e senza salti
+      originals.forEach(function (img) {
+        var c = img.cloneNode(true);
+        c.setAttribute("aria-hidden", "true");
+        track.appendChild(c);
+      });
+      // Velocità proporzionale al numero di immagini (~7s per immagine)
+      track.style.setProperty("--marquee-duration", (originals.length * 7) + "s");
+    });
+  }
+
   /* ---------- Reveal on scroll ---------- */
   function initReveal() {
     var items = $all("[data-reveal]");
@@ -263,6 +281,7 @@
       initReservation(V);
     }
 
+    initMarquee();
     initReveal();
   });
 })();
